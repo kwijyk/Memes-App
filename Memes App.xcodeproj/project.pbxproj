@@ -127,6 +127,7 @@
 				883DFF7B1FEBD36D00098A66 /* Resources */,
 				73DF0F854E3720D3F88FC08A /* [CP] Embed Pods Frameworks */,
 				22BC241D860B502B2ABBEAD3 /* [CP] Copy Pods Resources */,
+				883DFF961FEBDB0800098A66 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -236,6 +237,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Memes App/Pods-Memes App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		883DFF961FEBDB0800098A66 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
