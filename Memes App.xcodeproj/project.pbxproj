@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		883DFF811FEBD36D00098A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883DFF801FEBD36D00098A66 /* AppDelegate.swift */; };
-		883DFF831FEBD36D00098A66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883DFF821FEBD36D00098A66 /* ViewController.swift */; };
-		883DFF861FEBD36D00098A66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883DFF841FEBD36D00098A66 /* Main.storyboard */; };
 		883DFF881FEBD36D00098A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883DFF871FEBD36D00098A66 /* Assets.xcassets */; };
 		883DFF8B1FEBD36D00098A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883DFF891FEBD36D00098A66 /* LaunchScreen.storyboard */; };
+		89A27366A0E11B73030C325D /* Pods_Memes_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0D24D9E406E00A615D9A9D /* Pods_Memes_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F0D24D9E406E00A615D9A9D /* Pods_Memes_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memes_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83492AC0A49C5D4E0024C661 /* Pods-Memes App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memes App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Memes App/Pods-Memes App.release.xcconfig"; sourceTree = "<group>"; };
 		883DFF7D1FEBD36D00098A66 /* Memes App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memes App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		883DFF801FEBD36D00098A66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		883DFF821FEBD36D00098A66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		883DFF851FEBD36D00098A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		883DFF871FEBD36D00098A66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		883DFF8A1FEBD36D00098A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		883DFF8C1FEBD36D00098A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF512B50256E12659AF1A6FE /* Pods-Memes App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memes App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Memes App/Pods-Memes App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +29,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89A27366A0E11B73030C325D /* Pods_Memes_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3193FAE7AA6B391C66DA0E33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF512B50256E12659AF1A6FE /* Pods-Memes App.debug.xcconfig */,
+				83492AC0A49C5D4E0024C661 /* Pods-Memes App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		883DFF741FEBD36D00098A66 = {
 			isa = PBXGroup;
 			children = (
 				883DFF7F1FEBD36D00098A66 /* Memes App */,
 				883DFF7E1FEBD36D00098A66 /* Products */,
+				3193FAE7AA6B391C66DA0E33 /* Pods */,
+				8CCAC11AA27D74B30503044B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +66,52 @@
 		883DFF7F1FEBD36D00098A66 /* Memes App */ = {
 			isa = PBXGroup;
 			children = (
+				883DFF941FEBD66C00098A66 /* Models */,
+				883DFF931FEBD66A00098A66 /* View */,
+				883DFF921FEBD66800098A66 /* Controllers */,
+				883DFF951FEBD66F00098A66 /* Supported files */,
+			);
+			path = "Memes App";
+			sourceTree = "<group>";
+		};
+		883DFF921FEBD66800098A66 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		883DFF931FEBD66A00098A66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		883DFF941FEBD66C00098A66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		883DFF951FEBD66F00098A66 /* Supported files */ = {
+			isa = PBXGroup;
+			children = (
 				883DFF801FEBD36D00098A66 /* AppDelegate.swift */,
-				883DFF821FEBD36D00098A66 /* ViewController.swift */,
-				883DFF841FEBD36D00098A66 /* Main.storyboard */,
 				883DFF871FEBD36D00098A66 /* Assets.xcassets */,
 				883DFF891FEBD36D00098A66 /* LaunchScreen.storyboard */,
 				883DFF8C1FEBD36D00098A66 /* Info.plist */,
 			);
-			path = "Memes App";
+			name = "Supported files";
+			sourceTree = "<group>";
+		};
+		8CCAC11AA27D74B30503044B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F0D24D9E406E00A615D9A9D /* Pods_Memes_App.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +121,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 883DFF8F1FEBD36D00098A66 /* Build configuration list for PBXNativeTarget "Memes App" */;
 			buildPhases = (
+				52789C0146BAA2D2D2E00455 /* [CP] Check Pods Manifest.lock */,
 				883DFF791FEBD36D00098A66 /* Sources */,
 				883DFF7A1FEBD36D00098A66 /* Frameworks */,
 				883DFF7B1FEBD36D00098A66 /* Resources */,
+				73DF0F854E3720D3F88FC08A /* [CP] Embed Pods Frameworks */,
+				22BC241D860B502B2ABBEAD3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,18 +178,72 @@
 			files = (
 				883DFF8B1FEBD36D00098A66 /* LaunchScreen.storyboard in Resources */,
 				883DFF881FEBD36D00098A66 /* Assets.xcassets in Resources */,
-				883DFF861FEBD36D00098A66 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22BC241D860B502B2ABBEAD3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Memes App/Pods-Memes App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52789C0146BAA2D2D2E00455 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Memes App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73DF0F854E3720D3F88FC08A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Memes App/Pods-Memes App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Memes App/Pods-Memes App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		883DFF791FEBD36D00098A66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				883DFF831FEBD36D00098A66 /* ViewController.swift in Sources */,
 				883DFF811FEBD36D00098A66 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +251,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		883DFF841FEBD36D00098A66 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				883DFF851FEBD36D00098A66 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		883DFF891FEBD36D00098A66 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -272,6 +371,7 @@
 		};
 		883DFF901FEBD36D00098A66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF512B50256E12659AF1A6FE /* Pods-Memes App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +387,7 @@
 		};
 		883DFF911FEBD36D00098A66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83492AC0A49C5D4E0024C661 /* Pods-Memes App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
